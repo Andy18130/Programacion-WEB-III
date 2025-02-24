@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N2 Layout de dos columnas</title>
+</head>
+<body>
+    <div class="main">
+        <h1>N2 Layout de dos columnas</h1>
+        <p>Este es el contenido principal.</p>
+        <p> Se usa para sitios con una barra lateral, 
+            como blogs o tiendas en línea.</p>
+    </div>
+    <div class="sidebar">
+        <h2>Barra Lateral</h2>
+        <p>Enlaces y otros contenidos.</p> 
+    </div>
+</body>
+<style>
+    body {
+        font-family: Arial, sans-serif; /*Define la fuente principal del documento*/
+        margin: 0; /*Elimina el margen predeterminado del cuerpo*/
+        padding: 0; /*Elimina el relleno predeterminado del cuerpo*/
+        display: flex; /*Utiliza un layout flexbox para el cuerpo*/
+        background-color: cadetblue; /*Establece el color de fondo del cuerpo*/
+    }
+    .main {
+        flex: 3;/*Asigna 3 partes del espacio disponible al contenedor principal*/
+        padding: 20px; /*Añade un relleno de 20px alrededor del contenido principal*/
+        background-color: pink; /*Establece el color de fondo del contenedor principal*/
+    }
+    .sidebar {
+        flex: 1; /*Asigna 1 parte del espacio disponible al contenedor de la barra lateral*/
+        padding: 20px; /*Añade un relleno de 20px alrededor del contenido de la barra lateral*/
+        background-color: #ddd; /*<!-- Establece el color de fondo del contenedor de la barra lateral*/
+    }
+</style>
+</html>
